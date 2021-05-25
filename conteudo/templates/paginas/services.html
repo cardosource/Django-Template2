@@ -1,0 +1,24 @@
+{% load static %}
+<section id="services" class="section">
+      <div class="container">
+
+        <div class="row">
+          {%for services in service %}
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="{{services.icone}}"></i>
+              </div>
+              <h4>{{services.titulo}}</h4>
+              <p>{{services.texto}}</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          {% endfor %}
+
+
+
+        </div>
+      </div>
+    </section>
